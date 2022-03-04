@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 300px;
+  height: 600px;
+  background-color: peru;
+  border-top: 20px solid rgb(153, 95, 36);
+  border-left: 20px solid rgb(153, 95, 36);
+  border-right: 20px solid rgb(153, 95, 36);
+}
+.box {
+  position: relative;
+  width: 260px;
+  height: 580px;
+  background-color: rgb(185, 116, 46);
+}
+
+.box::before {
+  top: 140px;
+  left: 125px;
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+.part1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.window1 {
+  width: 100px;
+  height: 300px;
+  background-color: peru;
+  border: 10px solid rgb(153, 95, 36);
+}
+.window2 {
+  width: 100px;
+  height: 300px;
+  background-color: peru;
+  border: 10px solid rgb(153, 95, 36);
+}
+
+.part2 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.window3 {
+  width: 100px;
+  height: 170px;
+  background-color: peru;
+  border: 10px solid rgb(153, 95, 36);
+}
+.window4 {
+  width: 100px;
+  height: 170px;
+  background-color: peru;
+  border: 10px solid rgb(153, 95, 36);
+}
+
+.handle {
+  position: absolute;
+  left: 6px;
+  top: 330px;
+  width: 30px;
+  height: 30px;
+  background-color: gold;
+  border-radius: 50%;
+}
+
+.info-board {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  padding: 7px;
+  text-align: center;
+  background-color: rgb(241, 225, 0);
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  left: 70px;
+  top: 170px;
+  box-shadow: 10px 4px 10px rgb(83, 71, 70);
+}
+
+.info-board::before {
+  content: "";
+  width: 50px;
+  background-color: black;
+  height: 2px;
+  position: absolute;
+  transform: rotate(140deg);
+  left: 15px;
+  top: -10px;
+}
+
+.info-board::after {
+  content: "";
+  width: 52px;
+
+  background-color: black;
+  height: 2px;
+  position: absolute;
+  transform: rotate(-140deg);
+  right: 15px;
+  top: -10px;
+}
